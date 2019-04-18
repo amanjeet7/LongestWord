@@ -8,22 +8,21 @@ namespace c0731712
 {
     class Program
     {
-    
+        
+        string a;
         static void Main(string[] args)
         {
             Program a = new Program();
-            Console.WriteLine("The longest word is: ");
             a.MyFunctionA("Ada Lovelace wrote the first algorithm designed for procession by an Analytical Engine");
         }
 
-        public MyFunctionA(string iutput)
+        public void MyFunctionA(string iutput)
         {
-            //write a c#program to find the longest word in a string.
+           
             string[] words = iutput.Split(' ');
-            
+            string b;
             
             int wordArrayLength = words.Length;
-            int[]wordsLength = new int[wordArrayLength];
             int x = 0;
             foreach(var word in words)
             {
